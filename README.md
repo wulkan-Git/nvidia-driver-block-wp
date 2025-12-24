@@ -3,7 +3,7 @@
 ![Версия](https://img.shields.io/badge/версия-1.0-green)
 ![Лицензия](https://img.shields.io/badge/лицензия-MIT-blue)
 ![WordPress](https://img.shields.io/badge/WordPress-поддержка-success)
-
+[![GitHub Pages](https://img.shields.io/badge/🌐%20Демо-сайт-blue)](https://wulkan-Git.github.io/nvidia-driver-block-wp/)
 Красивый и функциональный блок для WordPress с кнопкой загрузки драйверов NVIDIA.
 
 ## 🚀 Быстрый старт
