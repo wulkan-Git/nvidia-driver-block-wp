@@ -1,0 +1,146 @@
+/* 
+===========================================
+Стили для блока драйверов NVIDIA
+Версия: 1.0
+===========================================
+*/
+
+:root {
+    --nvidia-green: #76b900;
+    --nvidia-dark-green: #5a8c00;
+    --text-dark: #333;
+    --text-medium: #555;
+    --text-light: #666;
+    --bg-light: #f8f8f8;
+    --border-color: #e0e0e0;
+}
+
+.nvidia-driver-block {
+    border: 1px solid var(--nvidia-green);
+    border-radius: 8px;
+    padding: 25px;
+    margin: 25px 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    background-color: var(--bg-light);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nvidia-driver-block:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.nvidia-driver-block h3 {
+    color: var(--text-dark);
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--nvidia-green);
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nvidia-driver-block h3:before {
+    content: "▸";
+    color: var(--nvidia-green);
+    font-size: 24px;
+}
+
+.driver-info {
+    margin-bottom: 25px;
+    line-height: 1.6;
+    color: var(--text-medium);
+    font-size: 15px;
+}
+
+.driver-info p {
+    margin-bottom: 12px;
+}
+
+.driver-info strong {
+    color: var(--text-dark);
+}
+
+.driver-info ul {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.driver-info li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 10px;
+}
+
+.driver-info li:before {
+    content: "•";
+    color: var(--nvidia-green);
+    position: absolute;
+    left: -10px;
+}
+
+.driver-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: linear-gradient(135deg, var(--nvidia-green) 0%, var(--nvidia-dark-green) 100%);
+    color: white;
+    padding: 14px 35px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(118, 185, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.driver-button:before {
+    content: "⬇";
+    font-size: 18px;
+}
+
+.driver-button:hover {
+    background: linear-gradient(135deg, var(--nvidia-dark-green) 0%, #476c00 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(118, 185, 0, 0.3);
+}
+
+.driver-button:active {
+    transform: translateY(0);
+}
+
+.driver-note {
+    font-size: 13px;
+    color: var(--text-light);
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px dashed var(--border-color);
+    line-height: 1.5;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .nvidia-driver-block {
+        padding: 20px;
+        margin: 15px 0;
+    }
+    
+    .nvidia-driver-block h3 {
+        font-size: 20px;
+    }
+    
+    .driver-button {
+        width: 100%;
+        padding: 12px 20px;
+    }
+}
